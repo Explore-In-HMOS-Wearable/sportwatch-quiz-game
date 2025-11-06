@@ -1,0 +1,31 @@
+<stack class="container" onswipe="onSwipe">
+    <swiper class="page-container" index="{{ currentIndex }}" onchange="change"
+            indicator="true" autoplay="false" loop="false" indicatormask="true">
+        <div class="page-container">
+            <text class="pageTitle">Select Topic</text>
+            <list class="lib-wrapper">
+                <list-item for="{{ quizTopics }}" class="lib-item" onclick="selectTopic({{ $item.name }})">
+                    <text class="lib-title">{{ $item.name }}</text>
+                </list-item>
+            </list>
+        </div>
+
+        <div class="page-container">
+            <text class="pageTitle">Quiz History</text>
+
+            <list class="lib-wrapper">
+                <list-item for="{{ quizResults }}" class="lib-item">
+                    <text class="lib-title">{{ $item.topic }}</text>
+                    <text class="lib-score">Score: {{ $item.score }}</text>
+                </list-item>
+            </list>
+        </div>
+    </swiper>
+
+    <div class="indicator-container">
+        <div class="indicator-dot" for="{{ pageNums }}"
+             style="background-color: {{ dotIndex === $idx ? '#FFCB74' : '#C4C4C4' }};
+                     width: {{ dotIndex === $idx ? '20px' : '10px' }};">
+        </div>
+    </div>
+</stack>

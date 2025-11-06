@@ -1,0 +1,23 @@
+<div class="container" onswipe="redirect">
+    <text class="pageTitle">History Quiz</text>
+
+    <list class="quiz-list">
+        <list-item for="{{ historyQuestions }}" class="question-block">
+            <div class="question-container">
+                <text class="question-text">{{$item.id}}. {{$item.question}}</text>
+
+                <list class="option-list">
+                    <list-item for="{{$item.options}}" class="option-item">
+                        <input type="button" value="{{$item}}" onclick="selectOption({{$idx + 1}})" class="option-card" />
+                    </list-item>
+                </list>
+            </div>
+        </list-item>
+
+        <list-item class="finish-item">
+            <div class="finish-btn" onclick="finishQuiz">
+                <text class="finish-text">Finish Quiz</text>
+            </div>
+        </list-item>
+    </list>
+</div>
