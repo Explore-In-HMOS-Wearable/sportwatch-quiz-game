@@ -4,27 +4,25 @@
 
 This is a basic quiz game that uses storage on lite devices.
 
-## Preview
+# Preview
 
-<div>
-    <img src="./screenshots/1.png" width="24%"/>
-    <img src="./screenshots/2.png" width="24%"/>
-    <img src="./screenshots/3.png" width="24%"/>
-    <img src="./screenshots/4.png" width="24%"/>
-</div>
+<img src="./screenshots/1.png" width="24%"/>
+<img src="./screenshots/2.png" width="24%"/>
+<img src="./screenshots/3.png" width="24%"/>
+<img src="./screenshots/4.png" width="24%"/>
 
-## Use Cases
+# Use Cases
 
 - User can select topic and start quiz.
 - User can learn success rate of the quiz and turn back to topics.
 
-## Tech Stack
+# Tech Stack
 
 - **Languages**: HML, JS, CSS
 - **Frameworks**: HarmonyOS SDK 5.0.0(12)
 - **Tools**: DevEco Studio Vers 5.1.0.842
 
-## Directory Structure
+# Directory Structure
 ```
 entry/
 ├── src/main/

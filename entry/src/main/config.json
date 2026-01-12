@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.litequizgame",
+    "bundleName": "com.hmosdemos.lite_wearable.quiz_game",
     "vendor": "hmosdemos",
     "version": {
       "code": 1000000,

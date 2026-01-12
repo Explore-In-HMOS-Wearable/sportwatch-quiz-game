@@ -3,7 +3,7 @@ import storage from '@system.storage';
 
 export default {
     data: {
-        pageNums: ["1", "2"],
+        pageNums: ['1', '2'],
         quizTopics: [
             { name: 'Music' },
             { name: 'History' },
@@ -25,7 +25,7 @@ export default {
     },
 
     selectTopic(name) {
-        console.log('Selected Topic: ' + name);
+        console.info(`Selected Topic: ${name}`);
         name = name[0].toLowerCase() + name.slice(1);
         router.replace({
             uri: `pages/${name}/${name}`
@@ -39,7 +39,7 @@ export default {
             storage.get({
                 key: key,
                 success: (data) => {
-                    console.log(`Storage get success [${key}]: ${data}`);
+                    console.info(`Storage get success [${key}]: ${data}`);
                     this.quizResults.push({
                         topic: topic.name,
                         score: data || '0'
